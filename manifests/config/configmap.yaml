@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: cloudshelf-config
+  namespace: cloudshelf-namespace
+
+data:
+  APP_NAME: "CloudShelf"
+  APP_ENV: "development"
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  LOG_LEVEL: "INFO"
