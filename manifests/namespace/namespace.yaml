@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Namespace
 
 metadata:
-  name: cloudshelf-namesapce
+  name: cloudshelf-namespace
 
   labels:
     app: cloudshelf
