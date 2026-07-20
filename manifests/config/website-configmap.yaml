@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: website-config
+  namespace: cloudshelf-namespace
+
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>CloudShelf</title>
+    </head>
+    <body style="font-family: Arial; text-align:center; margin-top:50px;">
+      <h1>📦 CloudShelf Inventory Platform</h1>
+      <h2>Kubernetes Project</h2>
+
+      <p>Application is running successfully.</p>
+
+      <p>Namespace: cloudshelf-namespace</p>
+
+      <p>Database: PostgreSQL</p>
+
+      <p>Version: v1.0</p>
+
+    </body>
+    </html>
