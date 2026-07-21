@@ -30,6 +30,15 @@ spec:
               mountPath: /usr/share/nginx/html
               readOnly: true
 
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+
           livenessProbe:
             httpGet:
               path: /
